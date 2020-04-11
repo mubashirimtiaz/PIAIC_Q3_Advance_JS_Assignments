@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap');
+body{
+  font-family: 'Baloo Thambi 2', cursive;
+  background: linear-gradient(to top, #e2e0e0, #ffffff);
+}
+
+.todo-container{
+  padding: 20px 0;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.todo-card{
+  width: 95%;
+  max-width: 500px;
+}
+
+input[type=text]:focus:not([readonly]) + label{
+  color: #17a2b8  !important;
+}
+input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #17a2b8  !important;
+  box-shadow: 0 1px 0 0 #17a2b8  !important;
+}
+.title{
+  padding: 20px 0;
+}
+.title h1{
+  font-size: 55px;
+  color: #17a2b8;
+  text-shadow: 1px 1px 5px #aaaaaa;
+}
+
+.list{
+  padding: 0 20px;
+}
+td:nth-child(even){
+  text-align:right;
+}
+@media screen and (max-width:600px){
+  .list{
+    padding: 0 5px;
+  }
+  .title h1{
+    font-size: 40px;
+  }
+}
+.form-check-input[type="checkbox"]{
+  display: none;
+}
+.form-check-input[type="checkbox"]+label{
+  display: inline-block;
+    position: absolute;
+    height: 1.5625rem;
+    padding-left: 35px;
+    line-height: 1.5625rem;
+    cursor: pointer;
+    left:1%;
+    user-select: none;
+}
+.form-check-input[type="checkbox"]:checked+label:before {
+    top: -4px;
+    left: -2px;
+    width: 12px;
+    height: 1.375rem;
+    border-top: 2px solid transparent;
+    border-right: 2px solid #17a2b8;
+    border-bottom: 2px solid #17a2b8;
+    border-left: 2px solid transparent;
+    /* -webkit-transform: rotate(40deg); */
+    transform: rotate(40deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .form-check-input[type="checkbox"]+label:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    content: "";
+    border: 2px solid #8a8a8a;
+    border-radius: 1px;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .form-check-input[type="checkbox"]:not(.filled-in)+label:after, label.btn input[type="checkbox"]:not(.filled-in)+label:after {
+    border: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.fa-trash{
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.fa-trash:hover{
+  color: crimson;
+}
+.form-check label{
+  font-size: 16px;
+  font-weight: 600;
+}
+.show{
+  opacity: 1;
+}
+.invisible{
+  opacity: 0;
+}
+.deleteAll{
+  font-size: 10!important;
+  /* font-weight: 600; */
+  cursor: pointer;
+  text-transform: capitalize;
+
+}
+.deleteAll:hover{
+  color: crimson;
+}
