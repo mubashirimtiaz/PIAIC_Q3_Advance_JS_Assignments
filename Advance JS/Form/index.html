@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="home" aria-selected="true">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#signin" role="tab" aria-controls="profile" aria-selected="false">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#faqs" role="tab" aria-controls="contact" aria-selected="false">FAQ's</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="signup" role="tabpanel" aria-labelledby="home-tab">
+          <div class="todo-container">
+            <div class="todo-card">
+              <ul class="form-timeline">
+                <li class="form-timeline-item">
+                  <a class="form-timeline-link" href="">1</a>
+                </li>
+                <li class="form-timeline-item">
+                  <a class="form-timeline-link" href="" >2</a>
+                </li>
+                <li class="form-timeline-item">
+                  <a class="form-timeline-link" href="">3</a>
+                </li>
+              </ul>
+              <form action="" method="post" autocomplete="off">
+                <fieldset>
+                  <legend>student information</legend>
+                  <label for="stdname">Name</label> <span class="guide">( please provide name as appear on cnic )</span>
+                  <input type="text" name="stdname" id="stdname"  maxlength="50"
+                    minlength="3" required>
+                    <p class="validMdg">Name must contains alphabets</p>
+                  <label for="stdemail">Email</label>
+                  <input type="email" name="stdemail" id="stdemail"  maxlength="50"
+                    required>
+                    <p class="validMdg">Email must be in correct format i.e abc@xxx.xyz</p>
+                  <label for="stdfathername">father name</label> <span class="guide">( please provide name as appear on cnic )</span>
+                  <input type="text" name="stdfathername" id="stdfathername"  maxlength="50" minlength="3" required>
+                  <p class="validMdg">Name must contains alphabets</p>
+                  <label for="stdcnic">Cnic / b-form</label> <span class="guide">( XXXX-XXXXXXX-X )</span>
+                  <input type="text" name="stdcnic" id="stdcnic" required>
+                  <p class="validMdg">CNIC # should contain only 13 digits. CNIC Should Have Numbers Only.</p>
+                  
+                  <label for="stdcountry">Country</label>
+                  <select name="stdcountry" id="stdcountry" >
+                    <option value="1">Pakistan</option>
+                    <option value="2">Australlia</option>
+                    <option value="3">Japan</option>
+                    <option value="4">Dubai</option>
+                    <option value="5">England</option>
+                    <option value="6">Srilanka</option>
+                    <option value="7">USA</option>
+                  </select>
+                  <label for="stdaddress">address</label>
+                  <input type="text" name="stdaddress" id="stdaddress"  maxlength="200">
+                  <p class="validMdg">Address must be within 200 characters</p>
+                  <label for="stdgender">gender</label>
+                  <br />
+                  <input type="radio" name="stdgender" id="stdgender"> male
+                  &nbsp;
+                  <input type="radio" name="stdgender" id="stdgender"> female
+                  <br />
+                  <label for="stdhavelaptop">do you have laptop</label>
+                  <br />
+                  <input type="checkbox" name="stdhavelaptop" id="stdhavelaptop"> Yes
+                  &nbsp;
+                  <input type="checkbox" name="stdhavelaptop" id="stdhavelaptop"> No
+                  <br />
+                  <label for="stddob">date of birth</label>
+                  <input type="date" name="stddob" id="stddob"  required>
+                  <label for="stdimg">upload picture</label>
+                  <input type="file" name="stdimg" id="stdimg"  required
+                    style="padding:5px">
+                  <label for="stdcomment">any query</label>
+                  <textarea name="stdcomment" id="stdcomment" rows="3" placeholder="write..."
+                    ></textarea>
+                  <br />
+                  <input type="submit" value="Update profile" class="btn btn-block btn-submit">
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="signin" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="faqs" role="tabpanel" aria-labelledby="contact-tab">...</div>
+      </div>
+      
+    <script src="js/app.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

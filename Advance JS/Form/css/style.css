@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap');
+body{
+    padding: 5px;
+  font-family: 'Baloo Thambi 2', cursive;
+  background: #ffffff;
+  /* background: linear-gradient(to top, #e2e0e0, #ffffff); */
+}
+.nav .nav-item a{
+    font-size: 20px;
+    font-weight: 600;
+    color: #6ad5ab;
+    transition: all 0.5s ease;
+} 
+.nav .nav-item a:hover{
+    color: #36847c;
+} 
+.nav .nav-item a.active{
+    color: #36847c !important;
+}
+legend{
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #36847c;
+  text-align: center;
+  /* margin: 30px 0; */
+}
+label{
+  margin-top:15px;
+  text-transform: capitalize;
+  color: #36847c;
+  font-weight: 600;
+  
+}
+input,select,textarea{
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  display: block;
+  border: 2px solid;
+  width: 100%;
+  border-color: #dddddd;
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+}
+input[type=file]{
+  background-color: #ffffff;
+}
+/* select{
+    background-color: #ffffff;
+} */
+input[type=checkbox],input[type=radio]{
+  width: initial;
+  display: initial;
+}
+input + p{
+  font-size: 0.8em;
+  font-weight: 600;
+  color: orange;
+  /* text-align: center; */
+  margin: 0;
+  height: 0;
+  opacity: 0;
+}
+input.invalid{
+  border-color: orange;
+}
+input.valid{
+  border-color: #6ad5ab;
+}
+input.invalid + p{
+  height: auto;
+  opacity: 1;
+}
+/* input.valid + p{
+  height: 0;
+  opacity: 0;
+} */
+
+form .guide{
+  color: crimson;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin: 0px 5px;
+  text-transform: capitalize;
+}
+.btn-submit{
+  background-color: #36847c;
+  color: #e2e0e0;
+  font-weight: 700;
+  border: 2px solid #36847c;
+  transform: all 0.9s ease 0s !important;
+
+}
+.btn-submit:hover{
+  background: #e2e0e0;
+  color: #36847c;
+}
+
+.todo-container{
+  padding: 20px 0;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to top, #e2e0e0, #ffffff);
+  border: 1px solid #dee2e6;
+  border-top: 0;
+
+}
+.todo-card{
+  width: 95%;
+  max-width: 500px;
+}
+.form-timeline{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 30px 0 40px 0;
+    border: 2px inset #36847c;
+    border-radius: 19px;
+}
+
+.form-timeline-item a{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 3px 17px;
+    border: 3px solid #36847c;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: #6ad5ab;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.form-timeline-item{
+    transform: scale(1.1);
+}
+.form-timeline-item a:hover{
+    border: 3px solid #6ad5ab;
+    background-color: #36847c;
+}
